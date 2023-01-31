@@ -16,6 +16,9 @@ cd ~/.ssh
 ssh-keygen -t ed25519 -C "ansible"
 # Enter file in which to save the key (/Users/<your username>/.ssh/id_ed25519): ansible
 
+# Install ansible and vagrant
+brew install ansible vagrant
+
 # Run vagrant
 vagrant up
 
