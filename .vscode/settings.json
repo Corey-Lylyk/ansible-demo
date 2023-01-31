@@ -1,0 +1,14 @@
+{
+  "window.zoomLevel": 1.8,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+  "atlascode.jira.enabled": false,
+  "editor.accessibilitySupport": "off",
+  "editor.tabSize": 2,
+  "workbench.iconTheme": "material-icon-theme",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
+}

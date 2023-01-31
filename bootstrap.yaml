@@ -1,0 +1,7 @@
+---
+- name: Create ansible directories and username in all servers
+  hosts: all
+  become: yes
+  become_user: root
+  roles:
+    - user

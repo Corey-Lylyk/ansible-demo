@@ -1,0 +1,8 @@
+---
+- name: Update APT package cache
+  apt: 
+    update_cache: "{{ update_cache }}"
+
+- name: Upgrade APT to the lastest packages
+  apt: 
+    upgrade: safe

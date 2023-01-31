@@ -1,0 +1,7 @@
+---
+- name: Create a user for {{ username }}
+  user:
+    name: "{{ username }}"
+    group: users
+    shell: /bin/bash
+    home: /home/{{ username }}

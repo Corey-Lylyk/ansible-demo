@@ -1,0 +1,25 @@
+---
+- name: Basic Playbook
+  hosts: webservers
+  become: true
+  become_user: root
+  vars:
+    webserver: apache2
+  tasks:
+    - name: Update APT package cache
+      apt: 
+        update_cache: yes
+
+    - name: Upgrade APT to the lastest packages
+      apt: 
+        upgrade: safe
+      
+    - name: Ensure {{ webserver }} is at the latest version
+      apt:
+        name: "{{ webserver }}"
+        state: latest
+  
+    - name: Ensure {{ webserver }} is running
+      service:
+        name: "{{ webserver }}"
+        state: started

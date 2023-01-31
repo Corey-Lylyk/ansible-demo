@@ -1,0 +1,28 @@
+{
+  "all": {
+    "hosts": {
+      "ansible-demo": {
+        "ansible_host": "192.168.56.2",
+        "public_ip": "192.168.56.2"
+      }
+    },
+    "children": {
+      "webservers": {
+        "hosts": {
+          "ansible-demo": {
+            "ansible_host": "192.168.56.2",
+            "public_ip": "192.168.56.2"
+          }
+        }
+      },
+      "dbservers": {
+        "hosts": {
+          "ansible-demo": {
+            "ansible_host": "192.168.56.2",
+            "public_ip": "192.168.56.2"
+          }
+        }
+      }
+    }
+  }
+}

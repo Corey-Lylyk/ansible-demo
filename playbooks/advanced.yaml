@@ -1,0 +1,8 @@
+---
+- name: Advanced Playbook
+  hosts: webservers
+  become: true
+  become_user: root
+  roles:
+    - common
+    - geerlingguy.mysql
